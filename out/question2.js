@@ -24,9 +24,7 @@ var GenericList = /** @class */ (function () {
     };
     GenericList.prototype.remove = function (item) {
         var index = this.find(item);
-        if (index > -1) {
-            this.lists.splice(index, 1);
-        }
+        this.lists.splice(index, 1);
     };
     GenericList.prototype.find = function (item) {
         return this.lists.indexOf(item);
